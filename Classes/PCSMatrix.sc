@@ -242,8 +242,8 @@ PCSMatrix {
 		pc = pc.asArray.first; // an int or pcs
 		if(this.matrix[r1][c1].includes(pc) and:
 			this.matrix[r2][c2].includes(pc), {
-				this.matrix[r1][c1] = this.matrix[r1][c1].copy.remove(pc);
-				this.matrix[r2][c2] = this.matrix[r2][c2].copy.remove(pc);
+                this.matrix[r1][c1] = this.matrix[r1][c1].copy.removeEvery(List[pc]);
+				this.matrix[r2][c2] = this.matrix[r2][c2].copy.removeEvery(List[pc]);
 				this.matrix[r1][c2] = this.matrix[r1][c2].copy.add(pc);
 				this.matrix[r2][c1] = this.matrix[r2][c1].copy.add(pc);
 		});
